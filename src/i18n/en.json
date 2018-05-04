@@ -22,14 +22,38 @@
   "operation": {
     "title": "Operation",
     "opeList": [
-      "Change the drawing mode first. It changes hand, route and line order.",
-      "Tap on the map。The start flag is shown",
-      "Tap next point。A route is drawn along the road.",
-      "Touch a Gray area around a via point, and you can change information. Trash icon, you can delete the point as well.",
-      "Long tap and drag, you can move a point.",
-      "Wrong tap makes sometimes unexpected route. Just tap undo. Redo is also available.",
-      "Export to a cloud drive and import from it. GPX, now only export is available.",
-      "Search icon, you can find intersection names in Japan. Rotation icon, toggle rotation enable and disable of the map. Current location icon, pan the map to your location."
+      {
+        "image": "00.png",
+        "desc": "Change the drawing mode first. It changes hand, route and line order."
+      },
+      {
+        "image": "01.png",
+        "desc": "Tap on the map。The start flag is shown"
+      },
+      {
+        "image": "02.png",
+        "desc": "Tap next point。A route is drawn along the road."
+      },
+      {
+        "image": "03_en.png",
+        "desc": "Touch a Gray area around a via point, and you can change information. Trash icon, you can delete the point as well."
+      },
+      {
+        "image": "04.png",
+        "desc": "Long tap and drag, you can move a point."
+      },
+      {
+        "image": "05.png",
+        "desc": "Wrong tap makes sometimes unexpected route. Just tap undo. Redo is also available."
+      },
+      {
+        "image": "06_en.png",
+        "desc": "Export to a cloud drive and import from it. GPX, now only export is available."
+      },
+      {
+        "image": "07_en.png",
+        "desc": "Search icon, you can find intersection names in Japan. Rotation icon, toggle rotation enable and disable of the map. Current location icon, pan the map to your location."
+      }
     ]
   },
   "graph": {

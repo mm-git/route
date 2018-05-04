@@ -2,85 +2,27 @@
   <div class="container-fluid">
     <div class="jumbotron">
       <h1 class="">{{ text.title }}</h1>
-      <div class="row operation_row">
-        <div class="col-sm-6">
-          <div class="operation-image">
-            <img src="../assets/00.png">
+      <div class="row operation_row" v-for="(ope, key, index) in text.opeList" :Key="index">
+        <template v-if="key % 2 === 0">
+          <div class="col-sm-6">
+            <div class="operation-image">
+              <img :src="require('../assets/' + ope.image)">
+            </div>
           </div>
-        </div>
-        <div class="operation-text col-sm-6">
-          <p>{{ text.opeList[0] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6 col-sm-push-6">
-          <div class="operation-image-left">
-            <img src="../assets/01.png">
+          <div class="operation-text col-sm-6">
+            <p>{{ ope.desc }}</p>
           </div>
-        </div>
-        <div class="operation-text-right col-sm-6 col-sm-pull-6">
-          <p>{{ text.opeList[1] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6">
-          <div class="operation-image">
-            <img src="../assets/02.png">
+        </template>
+        <template v-if="key % 2 === 1">
+          <div class="col-sm-6 col-sm-push-6">
+            <div class="operation-image-left">
+              <img :src="require('../assets/' + ope.image)">
+            </div>
           </div>
-        </div>
-        <div class="operation-text col-sm-6">
-          <p>{{ text.opeList[2] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6 col-sm-push-6">
-          <div class="operation-image-left">
-            <img src="../assets/03.png">
+          <div class="operation-text-right col-sm-6 col-sm-pull-6">
+            <p>{{ ope.desc }}</p>
           </div>
-        </div>
-        <div class="operation-text-right col-sm-6 col-sm-pull-6">
-          <p>{{ text.opeList[3] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6">
-          <div class="operation-image">
-            <img src="../assets/04.png">
-          </div>
-        </div>
-        <div class="operation-text col-sm-6">
-          <p>{{ text.opeList[4] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6 col-sm-push-6">
-          <div class="operation-image-left">
-            <img src="../assets/05.png">
-          </div>
-        </div>
-        <div class="operation-text-right col-sm-6 col-sm-pull-6">
-          <p>{{ text.opeList[5] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6">
-          <div class="operation-image">
-            <img src="../assets/06.png">
-          </div>
-        </div>
-        <div class="operation-text col-sm-6">
-          <p>{{ text.opeList[6] }}</p>
-        </div>
-      </div>
-      <div class="row operation_row">
-        <div class="col-sm-6 col-sm-push-6">
-          <div class="operation-image-left">
-            <img src="../assets/07.png">
-          </div>
-        </div>
-        <div class="operation-text-right col-sm-6 col-sm-pull-6">
-          <p>{{ text.opeList[7] }}</p>
-        </div>
+        </template>
       </div>
       <p class="next_arrow fadein"><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
     </div>
