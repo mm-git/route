@@ -7,7 +7,7 @@
           <div class="support_text">
             <img class="support_image" src="../assets/understand-100.png">
             <p>{{ text.faq.description }}
-              <router-link to="faq">{{ text.faq.link }}</router-link>
+              <router-link :to="faqlink">{{ text.faq.link }}</router-link>
             </p>
           </div>
         </div>
@@ -37,7 +37,9 @@ export default {
   },
   methods: {
     refreshText(locale) {
-      this.$i18n.locale = locale || 'en';
+      if (locale !== undefined) {
+        this.$i18n.locale = locale;
+      }
       this.text = this.$t(this.$options.name);
     },
   },
@@ -48,6 +50,14 @@ export default {
   },
   mounted() {
     this.refreshText(this.$route.params.lang);
+  },
+  computed: {
+    faqlink() {
+      if (this.$route.params.lang !== undefined) {
+        return `faq/${this.$route.params.lang}`;
+      }
+      return 'faq';
+    },
   },
 };
 </script>

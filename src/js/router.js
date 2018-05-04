@@ -12,10 +12,6 @@ export default new Router({
       component: Route,
     },
     {
-      path: '/:lang',
-      component: Route,
-    },
-    {
       path: '/faq',
       component: Faq,
     },
@@ -23,5 +19,15 @@ export default new Router({
       path: '/faq/:lang',
       component: Faq,
     },
+    {
+      path: '/:lang',
+      component: Route,
+    },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return { x: 0, y: 0 };
+  },
 });

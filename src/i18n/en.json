@@ -62,5 +62,71 @@
       "description": "If you could't resolve the problem after reading FAQ, please contact us.",
       "link": "Contact form is here."
     }
+  },
+  "faqlist": {
+    "title": "Frequently asked questions",
+    "back": "Back",
+    "qaList": [
+      {
+        "q" : "What is the different between a small dot icon and a round icon?",
+        "a" : "A small dot is just a via point. It is not shown on the pacenotes. On the other hand, a round icon is shown on the pacenotes. In addition, start, goal and check point are shown on the pacenotes as well."
+      },
+      {
+        "q" : "The route can not be drawn, even though a road exists.",
+        "a" : "Sometimes routing service error occurs. Use line mode instead."
+      },
+      {
+        "q" : "The road name is wrong or can't get it.",
+        "a" : "The road data is based on Open Street Map. Wrong name is registered or is no registered in the first place. Edit road name function is under planning."
+      },
+      {
+        "q" : "Altitude value seems wrong.",
+        "a" : "Altitude data is highly compressed for reducing server storage usage. Because of irreversible compressed data, decoded altitude value may have error. Please use these values as a reference or estimated value. I want to improve the quality of the data in the feature."
+      },
+      {
+        "q" : "Altitude value can not be got.",
+        "a" : "Altitude data only around the road, especially paved road is stored in the server. For instance, you can't get altitude value in the deep forest where the any road or path are nothing. This application is unsuitable for hiking or mountain biking."
+      },
+      {
+        "q" : "Turn direction is wrong on the pacenotes.",
+        "a" : "Turn direction is calculated with the before and after line direction of the point. Sometimes turn direction is unexpected. Edit turn direction function is under planning."
+      },
+      {
+        "q" : "Can GPX or KML file be read ?",
+        "a" : "Now it is unavailable to read GPX or KML. GPX reading function is under planning."
+      },
+      {
+        "q" : "How is the format of output data?",
+        "a" : "It is unclassified. However the format is just JSON."
+      },
+      {
+        "q" : "Icons disappeared. ",
+        "a" : "In hand mode, you can hide any icon by tapping on the map. Tap again, and icons appear."
+      },
+      {
+        "q" : "In route ot line mode, rock image is shown on the icon.",
+        "a" : "Pleas enlarge the map. Route editing is prohibited if the zoom level of the map is too low."
+      },
+      {
+        "q" : "Is it possible to insert the point on the line.",
+        "a" : "Now this function is unavailable. Under planning."
+      },
+      {
+        "q" : "Some point can not be removed.",
+        "a" : "After deleting the point, new route is calculated. And new route may have same point that you have deleted."
+      },
+      {
+        "q" : "When some point are overlapped, it can't be select or edit.Especially, in case of go and back route editing.",
+        "a" : "Now there is nothing to help it. I'm planning a layer function for separating overlapped lines."
+      },
+      {
+        "q" : "Is there any way to restore the deleted route？",
+        "a" : "When you use trash icon, or load another data from cloud. It is not possible to restore the deleted route. Any other operation, you can undo and redo."
+      },
+      {
+        "q" : "Intersection can't be found.",
+        "a" : "Intersection is available only in Japan. Intersection information is a little old. (based on around 2014) It is not covered perfectly. Registered character is sometimes wrong. Even though you enter collect word, you can't find it, just entering a radius value instead."
+      }
+    ]
   }
 }

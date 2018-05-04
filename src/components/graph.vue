@@ -25,7 +25,9 @@ export default {
   },
   methods: {
     refreshText(locale) {
-      this.$i18n.locale = locale || 'en';
+      if (locale !== undefined) {
+        this.$i18n.locale = locale;
+      }
       this.text = this.$t(this.$options.name);
     },
   },
