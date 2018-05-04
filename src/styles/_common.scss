@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Jaldi");
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@font-face {
+  font-family: "NumberArrow";
+  src: url("~@/fonts/Arrow-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $base_color_black;
+  background: $base_color_white;
+  font-size: $base_font_size;
+  font-family: Jaldi, 'Meiryo', Osaka, sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: $base_color_blue_dark;
+    text-decoration: underline;
+  }
+}
+
+#loading {
+  display: block;
+}
+
+#loaded {
+  opacity: 0;
+}
+
+.align-baseline {
+  vertical-align: -5px;
+}
+
+.container-fluid {
+  padding: 0;
+
+  .jumbotron {
+    border-radius: 0;
+  }
+
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.awesome {
+  font-family: FontAwesome, sans-serif;
+}
+
+.sns_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-collapse: separate;
+  border-spacing: 8px 0;
+  list-style-type: none;
+
+  li {
+    padding: 0 3px;
+  }
+}
+
+.sns_facebook {
+  position: relative;
+  top: -2px;
+}
+
+.next_arrow {
+  text-align: center;
+
+  i {
+    font-size: 80px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .sns_icons {
+    justify-content: flex-end;
+  }
+}

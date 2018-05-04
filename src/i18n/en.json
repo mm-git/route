@@ -1,0 +1,66 @@
+{
+  "top": {
+    "summary" : [
+      "Only tap action.",
+      "Check the elevation.",
+      "Automatic pacenotes generator.",
+      "Finally, not only iPad but also iPhone is supported. Now you can create GPX file without PC."
+    ],
+    "download": "Download Now, check it out!"
+  },
+  "feature": {
+    "title": "What is this application？",
+    "featureList": [
+      "You can create the route that you are going to or have gone, easily.",
+      "Only tap action, the route can be drawn.",
+      "You can check the route profile, as well",
+      "The pacenotes of the route is generated automatically.",
+      "Created route can be exported to a cloud storage(iCloudDrive, Dropbox and so on). Of course, you can import from a cloud.",
+      "GPX file, now only export is available."
+    ]
+  },
+  "operation": {
+    "title": "Operation",
+    "opeList": [
+      "Change the drawing mode first. It changes hand, route and line order.",
+      "Tap on the map。The start flag is shown",
+      "Tap next point。A route is drawn along the road.",
+      "Touch a Gray area around a via point, and you can change information. Trash icon, you can delete the point as well.",
+      "Long tap and drag, you can move a point.",
+      "Wrong tap makes sometimes unexpected route. Just tap undo. Redo is also available.",
+      "Export to a cloud drive and import from it. GPX, now only export is available.",
+      "Search icon, you can find intersection names in Japan. Rotation icon, toggle rotation enable and disable of the map. Current location icon, pan the map to your location."
+    ]
+  },
+  "graph": {
+    "title": "Elevation",
+    "descList" : [
+      "The elevation graph of the route is drawn.",
+      "You can check the route distance, highest point, lowest point and total elevation."
+    ]
+  },
+  "cuesheet": {
+    "title": "Pacenotes",
+    "descList": [
+      "Pacenotes is automatically generated, at the start, turn point(round icon on the map), check point and goal.",
+      "Distance from last point and total distance are shown.",
+      "It is shown that the road name or number you are going to next.",
+      "Also you can check a altitude of the point.",
+      "Point comment is shown. Touch here, and you can edit it.",
+      "If the point have a intersection name, it is shown."
+    ],
+    "download": "Download here!"
+  },
+  "support": {
+    "faq": {
+      "title": "FAQ",
+      "description": "Please check FAQ first, when you get trouble or you can't understand something.",
+      "link": "FAQ is here"
+    },
+    "contact": {
+      "title": "Contact form",
+      "description": "If you could't resolve the problem after reading FAQ, please contact us.",
+      "link": "Contact form is here."
+    }
+  }
+}

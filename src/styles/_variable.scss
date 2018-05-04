@@ -1,0 +1,25 @@
+// base colors
+$base_color_white: #f8f8f8;
+$base_color_black: #0f0f0f;
+$base_color_blue: #5896c1;
+$base_color_gray: #d9d9d9;
+$base_color_yellow: #f9cf00;
+$base_color_red: #f18662;
+
+$base_color_blue_light: lighten($base_color_blue, 8%);
+$base_color_blue_dark: darken($base_color_blue, 8%);
+$base_color_gray_light: lighten($base_color_gray, 8%);
+$base_color_gray_dark: darken($base_color_gray, 8%);
+$base_color_yellow_light: lighten($base_color_yellow, 8%);
+$base_color_yellow_dark: darken($base_color_yellow, 8%);
+$base_color_red_light: lighten($base_color_red, 8%);
+$base_color_red_dark: darken($base_color_red, 8%);
+
+$base_color_white_a65: rgba(248, 248, 248, .65);
+
+// font
+$base_font_size: 16px;
+
+// size
+$border_radius: 3px;
+$button_height: 20px;
